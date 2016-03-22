@@ -63,8 +63,6 @@ public class MainActivity extends Activity {
         shkx.setOnClickListener(new MyOnClickListener());
         cmx=(TextView)findViewById(R.id.cmx);
         cmx.setOnClickListener(new MyOnClickListener());
-        tc=(TextView) findViewById(R.id.tc);
-        tc.setOnClickListener(new MyOnClickListener());
 }
 
   class MyOnClickListener implements android.view.View.OnClickListener {
@@ -116,9 +114,6 @@ public class MainActivity extends Activity {
 		case R.id.sxy:
 			in.setClass(MainActivity.this, SxyActivity.class);
 			startActivity(in);
-			break;
-		case R.id.tc:
-			MainActivity.this.finish();
 			break;
 		}
 	}
